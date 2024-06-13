@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resource Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Resource Hub by Sourav Kumar</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#question-papers">Question Papers</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="https://www.mrem.ac.in" target="_blank">MREM</a></li>
+                <li><a href="https://www.instagram.com/sourav_axs/" target="_blank" class="instagram-button">Follow me!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Student Resource Hub</h2>
+        <p>Your one-stop destination for all your class notes, lab manuals, and other educational resources.</p>
+    </section>
+
+    <section id="resources">
+        <h2>Resources</h2>
+        <label for="subjects">Select Subject:</label>
+        <select id="subjects" onchange="showResources(this.value)">
+            <option value="">Select a subject</option>
+            <option value="EC205ES">EC205ES - EDC</option>
+            <option value="MA201BS">MA201BS - ODVC</option>
+            <option value="MC210">MC210 - E.S</option>
+            <option value="ME203ES">ME203ES - EWS</option>
+            <option value="PH206BS">PH206BS - AP LAB</option>
+            <option value="PH202BS">PH202BS - AP</option>
+            <option value="CE207ES">CE207ES - PP LAB</option>
+            <option value="LB211">LB211 - LIBRARY</option>
+            <option value="EN204HS">EN204HS - ESE</option>
+            <option value="SEM212">SEM212 - SEMINAR</option>
+            <option value="SP213">SP213 - SPORTS</option>
+            <option value="EN208HS">EN208HS - ELCS LAB</option>
+            <option value="CS209ES">CS209ES - IT WORKSHOP LAB</option>
+        </select>
+
+        <div id="resource-list"></div>
+    </section>
+
+    <section id="question-papers">
+        <h2>Previous Year Question Papers</h2>
+        <ul>
+            <li><a href="downloads/question_paper1.pdf" download>Question Paper 1</a></li>
+            <li><a href="downloads/question_paper2.pdf" download>Question Paper 2</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_query" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact us at: Sourav Kumar</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/sourav_axs/" target="_blank" class="instagram">Instagram</a>
+                <a href="https://www.linkedin.com/in/sourav-kumar-886b01279/" target="_blank" class="linkedin">LinkedIn</a>
+                <a href="https://www.twitter.com/" target="_blank" class="twitter">Twitter</a>
+            </div>
+        </div>
+        <p class="footer-note">© 2024 Student Resource Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

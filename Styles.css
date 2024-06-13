@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #4CAF50, #66BB6A);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4f4dd;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5em 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    color: #388E3C;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links a {
+    margin: 0 0.5em;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #4CAF50;
+    transform: scale(1.1);
+}
+
+.footer-note {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+.instagram-button {
+    background: linear-gradient(135deg, #833AB4, #FD1D1D, #FCB045);
+    padding:
